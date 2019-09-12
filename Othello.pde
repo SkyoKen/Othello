@@ -35,18 +35,19 @@ Introduction introduction;
 //「初期化」タスク生成時に１回だけ行う処理
 //-----------------------------------------------------------------------------
 void setup() {
-  fullScreen();
-  //size(960, 540);           //ウインドウ設定
+  //fullScreen();
+  size(960, 540);           //ウインドウ設定
    strokeWeight(height/540*2);  
  
   fill(0, 0, 0);              //塗りつぶし初期値
-  //font = createFont("MS Gothic", height*0.1, true);
   font = createFont("./data/mplus-1m-medium.ttf", 1);
   textFont(font);
+  
   title=new Title();
   option=new Option();
   game=new Game();
   introduction=new Introduction();
+  
   Task=TITLE;
 }
 

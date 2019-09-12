@@ -25,21 +25,21 @@ public class Option {
     for (int i=0; i<6; i++) {
       this.AIbtn[i]=new Button(width/7*(i+1), height/4, height/5, height/4, AIName[i], height/15);
     }
-    AIbtn[5].isChangeColor();
+    this.AIbtn[5].isChangeColor();
     this.ai=5;
     //sizebtn  
     this.sizebtn=new Button[3];
     for (int i=0; i<3; i++) {
       this.sizebtn[i]=new Button(width/8*(i+1), height/8*7, height/5, height/10, 2*(i+2)+"x"+2*(i+2), height/15);
     }
-    sizebtn[2].isChangeColor();
+    this.sizebtn[2].isChangeColor();
     this.size=2;
     //turnbtn
     this.turnbtn=new Button[2];
     for (int i=0; i<2; i++) {
       this.turnbtn[i]=new Button(width/8*(i+1), height/8*6, height/5, height/10, i==0?"先手":"後手", height/15);
     }
-    turnbtn[0].isChangeColor();
+    this.turnbtn[0].isChangeColor();
     this.turn=0;
     //名前
     for (int i=0; i<this.nameMax; i++) {
@@ -49,13 +49,13 @@ public class Option {
   //「実行」１フレーム毎に行う処理
   public void update() {
     for (int i=0; i<6; i++) {
-      AIbtn[i]. updateEllipse();
+      this.AIbtn[i]. updateEllipse();
     }
     for (int i=0; i<3; i++) {
-      sizebtn[i]. update();
+      this.sizebtn[i]. update();
     }
     for (int i=0; i<2; i++) {
-      turnbtn[i]. update();
+      this.turnbtn[i]. update();
     }
     //メッセージ
     information();

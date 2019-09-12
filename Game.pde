@@ -2,10 +2,10 @@
 //┃ゲーム本編                                                                  　　         　┃
 //┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 public class Game {
-  private Board board;                //ゲーム盤
-  private Button optionbtn;              //リセット　ボタン
-  private Button backbtn;              //リセット　ボタン
-  private Button restartbtn;              //リセット　ボタン
+  private Board board;                
+  private Button optionbtn;              
+  private Button backbtn;              
+  private Button restartbtn;             
   private boolean over;
   private int sizeX, sizeY;
   private float d;
@@ -34,6 +34,7 @@ public class Game {
     this.board.update();
     //ゲーム情報
     showInfo();
+    //ボタン
     this.restartbtn.update();
     this.optionbtn.update();
     this.backbtn.update();
@@ -111,7 +112,7 @@ public class Game {
     text(check(), height/30*4, height/30*2);
     popMatrix();
   }
-  //btn
+  //ボタン
   private void option() {
     Task=OPTION;
   }
@@ -144,9 +145,7 @@ public class Game {
       int x=(int)((pos.x-sx)/this.d);
       int y=(int)((pos.y-sy)/this.d);
       if (!this.over&&board.sameTurn()||(!board.sameTurn()&&board.getAI()==5)) {
-        board.play(x, y);board. showBoard();//board.AI4();
-       // println();
-      //  println(board.getPoint());
+        board.play(x, y);board. showBoard();
       }
     }
   }

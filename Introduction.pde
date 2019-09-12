@@ -27,51 +27,51 @@ public class Introduction {
     case 0:
       textSize(height/10);
       textAlign(CENTER, CENTER);
-      text(msg[0], width/2, height/10*2);
+      text(this.msg[0], width/2, height/10*2);
       textSize(height/15);
-      text(msg[1], width/2, height/10*4.5);
+      text(this.msg[1], width/2, height/10*4.5);
       textAlign(LEFT, CENTER);
       textSize(height/32);
-      text(msg[2], width/2, height/3*2,width/4*3,height/8*3);
+      text(this.msg[2], width/2, height/3*2,width/4*3,height/8*3);
      
       break;
     case 1:
       textSize(height/10);
       textAlign(CENTER, CENTER);
-      text(msg[3], width/2, height/10*2);
+      text(this.msg[3], width/2, height/10*2);
       textAlign(LEFT, CENTER);
       textSize(height/20);
-      text(msg[4], width/2, height/2, width/4*3, height/8*3);
+      text(this.msg[4], width/2, height/2, width/4*3, height/8*3);
       break;
     case 2:
       textSize(height/10);
       textAlign(CENTER, CENTER);
-      text(msg[5], width/2, height/10);
+      text(this.msg[5], width/2, height/10);
       textAlign(LEFT, CENTER);
       textSize(height/20);
-      text(msg[6], width/8*3, height/10*2.5, width/2, height);
-      text(msg[7], width/8*3, height/10*6, width/2, height);
-      image(img[0], width/4*2.5, height/4, height/2, height/2);
+      text(this.msg[6], width/8*3, height/10*2.5, width/2, height);
+      text(this.msg[7], width/8*3, height/10*6, width/2, height);
+      image(this.img[0], width/4*2.5, height/4, height/2, height/2);
       break;
     case 3:
       textSize(height/10);
       textAlign(CENTER, CENTER);
-      text(msg[5], width/2, height/10);
+      text(this.msg[5], width/2, height/10);
       textSize(height/20);
       textAlign(LEFT, CENTER);
-      text(msg[8], width/8*3, height/10*4.5, width/2, height);
-      image(img[1], width/4*2.5, height/4, height/2, height/2);
+      text(this.msg[8], width/8*3, height/10*4.5, width/2, height);
+      image(this.img[1], width/4*2.5, height/4, height/2, height/2);
       break;
     case 4:
       textSize(height/10);
       textAlign(CENTER, CENTER);
-      text(msg[5], width/2, height/10);
+      text(this.msg[5], width/2, height/10);
       textSize(height/20);
       textAlign(LEFT, CENTER);
-      text(msg[9], width/8*3, height/10*3, width/2, height);
-      text(msg[10], width/8*3, height/10*6, width/2, height);
-      image(img[2], width/4*2.5, height/4, height/2, height/5);
-      image(img[3], width/4*2.5, height/2, height/2, height/5);
+      text(this.msg[9], width/8*3, height/10*3, width/2, height);
+      text(this.msg[10], width/8*3, height/10*6, width/2, height);
+      image(this.img[2], width/4*2.5, height/4, height/2, height/5);
+      image(this.img[3], width/4*2.5, height/2, height/2, height/5);
       break;
     case 5:
       textSize(height/10);
@@ -79,10 +79,10 @@ public class Introduction {
       text("AI", width/2, height/10);
       textSize(height/20);
       textAlign(LEFT, CENTER);
-      text(ai[0], width/2, height/10*2.5, width/4*3, height);
-      text(ai[1], width/2, height/10*3.5, width/4*3, height);
-      text(ai[2], width/2, height/10*4.5, width/4*3, height);
-      text(ai[3], width/2, height/10*6, width/4*3, height);
+      text(this.ai[0], width/2, height/10*2.5, width/4*3, height);
+      text(this.ai[1], width/2, height/10*3.5, width/4*3, height);
+      text(this.ai[2], width/2, height/10*4.5, width/4*3, height);
+      text(this.ai[3], width/2, height/10*6, width/4*3, height);
       break;
     case 6:
       textSize(height/10);
@@ -90,8 +90,8 @@ public class Introduction {
       text("AI", width/2, height/10);
       textSize(height/20);
       textAlign(LEFT, CENTER);
-      text(ai[4], width/2, height/10*2.5, width/4*3, height);
-      text(ai[5], width/2, height/10*4, width/4*3, height);
+      text(this.ai[4], width/2, height/10*2.5, width/4*3, height);
+      text(this.ai[5], width/2, height/10*4, width/4*3, height);
       break;
     case 7:
       textSize(height/10);
@@ -99,8 +99,8 @@ public class Introduction {
       text("AI", width/2, height/10);
       textSize(height/20);
       textAlign(LEFT, CENTER);
-      text(ai[6], width/2, height/10*2.5, width/4*3, height);
-      text(ai[7], width/2, height/10*5, width/4*3, height);
+      text(this.ai[6], width/2, height/10*2.5, width/4*3, height);
+      text(this.ai[7], width/2, height/10*5, width/4*3, height);
       break;
     case 8:
       textSize(height/10);
@@ -108,13 +108,13 @@ public class Introduction {
       text("AI", width/2, height/10);
       textSize(height/20);
       textAlign(LEFT, CENTER);
-      text(ai[8], width/2, height/10*2.5, width/4*3, height);
-      text(ai[9], width/2, height/10*4.5, width/4*3, height);
+      text(this.ai[8], width/2, height/10*2.5, width/4*3, height);
+      text(this.ai[9], width/2, height/10*4.5, width/4*3, height);
       break;
     }
-    backbtn.update();
-    nextbtn.update();
-    prebtn.update();
+    this.backbtn.update();
+    this.nextbtn.update();
+    this.prebtn.update();
   }
   public void key() {
      if(keyCode==112){Task=OPTION;}
